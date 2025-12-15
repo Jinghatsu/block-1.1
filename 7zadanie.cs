@@ -13,7 +13,6 @@ class Program
         
         int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         
-        // Проверка на високосный год
         bool isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         if (isLeapYear)
             daysInMonth[1] = 29;
@@ -32,4 +31,5 @@ class Program
         
         Console.WriteLine($"Дата следующего дня: {day:D2}.{month:D2}.{year}");
     }
+
 }   
